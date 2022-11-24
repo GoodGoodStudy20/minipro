@@ -1,0 +1,51 @@
+export const MOTHS = [{
+	index: 0,
+	value: 1,
+	title: '2022-01'
+}, {
+	index: 1,
+	value: 2,
+	title: '2022-02'
+}, {
+	index: 2,
+	value: 3,
+	title: '2022-03'
+}, {
+	index: 3,
+	value: 4,
+	title: '2022-04'
+}, {
+	index: 4,
+	value: 5,
+	title: '2022-05'
+}, {
+	index: 5,
+	value: 6,
+	title: '2022-06'
+}, {
+	index: 6,
+	value: 7,
+	title: '2022-07'
+}, {
+	index: 7,
+	value: 8,
+	title: '2022-08'
+}, {
+	index: 8,
+	value: 9,
+	title: '2022-09'
+}, {
+	index: 11,
+	value: 10,
+	title: '2022-10'
+}, {
+	index: 10,
+	value: 11,
+	title: '2022-11'
+}, {
+	index: 11,
+	value: 12,
+	title: '2022-12'
+}, ]
+
+// MOTHS

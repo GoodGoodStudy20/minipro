@@ -1,0 +1,246 @@
+.order-item-details-box {
+		padding: 0 30rpx 200rpx;
+		background-color: $uni-bg-color-grey;
+		box-sizing: border-box;
+		overflow: hidden;
+		
+		.progress-box {
+			padding: 20rpx 30rpx;
+			border: 1px solid rgb(229, 232, 235);
+			background-color: rgb(255, 255, 255);
+			border-radius: 10rpx;
+			margin-top: 30rpx;
+			background-color: $uni-bg-color;
+		
+			.top {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+		
+				.left {
+					font-size: $uni-font-size-lg;
+					font-weight: bold;
+				}
+		
+				.right {
+					color: $uni-text-color-grey;
+					font-size: $uni-font-size-base;
+					&.error{
+						color: red;
+					}
+				}
+			}
+		
+			.bottom {
+				display: flex;
+				align-items: center;
+				margin-top: 10rpx;
+		
+				.progress {
+					flex: 1;
+				}
+		
+				.speed-of-progress {
+					display: block;
+					margin-left: 20rpx;
+					color: $uni-text-color-grey;
+					font-size: uni-font-size-sm12;
+				}
+			}
+		}
+		.order-item-details {
+			padding: 20rpx 30rpx;
+			border: 1px solid rgb(229, 232, 235);
+			background-color: rgb(255, 255, 255);
+			border-radius: 10rpx;
+			margin-top: 20rpx;
+			background-color: $uni-bg-color;
+
+			.license-plate-number {
+				font-size: $uni-font-size-lg;
+				font-weight: bold;
+			}
+
+			.key-box {
+
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin-top: 40rpx;
+				font-size: $uni-font-size-base;
+
+				.key {
+					&.slt {
+						align-self: flex-start;
+					}
+				}
+
+				.value {
+					color: $uni-text-color-grey;
+				}
+				.error {
+					color: red;
+				}
+				.yearly-inspection {
+					position: relative;
+					display: flex;
+					align-items: center;
+					justify-content: center;
+					width: 100rpx;
+					height: 100rpx;
+					// background-color: #cccccc;
+					font-size: $uni-font-size-sm12;
+					text-align: center;
+					color: #f5f5f5;
+					.yearly-inspection-image {
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+
+		.driver-information {
+			display: block;
+			margin: 30rpx 0;
+			font-weight: bold;
+			font-size: $uni-font-size-lg;
+		}
+
+		.order-item {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			padding: 0 30rpx 30rpx;
+			border: 1px solid rgb(229, 232, 235);
+			background-color: rgb(255, 255, 255);
+			border-radius: 10rpx;
+			margin-top: 20rpx;
+			background-color: $uni-bg-color;
+
+
+			.license-plate-number {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				font-size: $uni-font-size-lg;
+				font-weight: bold;
+				margin-top: 20rpx;
+
+				.left {
+					display: flex;
+					align-items: center;
+
+					.check {
+						display: block;
+						width: 30rpx;
+						height: 30rpx;
+						border-radius: 50%;
+						border: 1rpx solid #000000;
+						margin-right: 20rpx;
+
+						&.checked {
+							border: 1rpx solid $uni-color-success;
+							background-color: $uni-color-success;
+						}
+					}
+
+					.avatar {
+						display: block;
+						width: 50rpx;
+						height: 50rpx;
+						margin-right: 10rpx;
+						// background-color: #888888;
+						border-radius: 50%;
+					}
+
+				}
+			}
+
+			.key-box {
+				display: flex;
+				align-items: center;
+				margin-top: 20rpx;
+				font-size: $uni-font-size-base;
+
+				.handling-method {
+					border-radius: 10rpx;
+					padding: 0 6rpx;
+					background-color: $uni-color-warning;
+					color: $uni-bg-color;
+				}
+
+				.key {
+					min-width: 150rpx;
+					text-align-last: justify;
+					text-align: justify;
+					text-justify: distribute-all-lines;
+				}
+
+				.t {
+					color: #666666;
+				}
+
+			}
+		}
+
+		.vehicle-collection {
+			padding: 20rpx 30rpx;
+			border: 1px solid rgb(229, 232, 235);
+			background-color: rgb(255, 255, 255);
+			border-radius: 10rpx;
+			margin-top: 30rpx;
+			background-color: $uni-bg-color;
+
+			.top {
+				font-weight: bold;
+				font-size: $uni-font-size-base;
+
+				.tooltip {
+					font-weight: 400;
+					color: $uni-text-color-grey;
+					font-size: uni-font-size-sm12;
+				}
+			}
+
+			.bottom-img {
+				display: flex;
+				justify-content: space-between;
+				flex-wrap: wrap;
+				margin-top: 20rpx;
+
+				.img-box {
+					width: 140rpx;
+					height: 140rpx;
+					// background-color: #cccccc;
+					margin-top: 20rpx;
+
+					.img {
+						width: 100%;
+						height: 100%;
+					}
+				}
+			}
+		}
+
+
+		.distribute {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;			
+			background-color: $uni-bg-color;
+			padding-bottom: env(safe-area-inset-bottom);
+			padding: 30rpx 30rpx;
+      
+      display: flex;
+			/deep/ button {
+				width: 690rpx;
+				// width: 40%;
+				background-color: #007aff;
+			}
+		}
+	}

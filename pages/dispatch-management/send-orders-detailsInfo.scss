@@ -1,0 +1,198 @@
+.send-orders-detailsInfo {
+		padding: 0 30rpx 260rpx;
+		background-color:  $uni-bg-color-grey;
+		overflow: hidden;
+
+		&.pb{
+			padding-bottom: 0;
+		}
+		.order-item {
+			display: flex;
+			flex-wrap: wrap;
+			flex-direction: column;
+			padding: 0 30rpx 30rpx;
+			border: 1px solid rgb(229, 232, 235);
+			background-color: rgb(255, 255, 255);
+			border-radius: 10rpx;
+			margin-top: 20rpx;
+			background-color: $uni-bg-color;
+
+			&.checked-item{
+				border-color: $uni-color-primary;
+				transition: all .3s ease;
+			}
+			.license-plate-number {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				font-size: $uni-font-size-lg;
+				font-weight: bold;
+				margin-top: 20rpx;
+				.left{
+					display: flex;
+					align-items: center;
+					.check{						
+						display: block;
+						width: 40rpx;
+						height: 40rpx;
+						border-radius: 50%;
+						border: 1rpx solid $uni-text-color-grey;
+						margin-right: 20rpx;
+						&.checked{
+							border: 1rpx solid $uni-color-primary;
+							background-color: $uni-color-primary;
+							transition: all .3s ease;
+						}
+					}
+					.avatar{
+						display: block;
+						width: 46rpx;
+						height: 46rpx;
+						margin-right: 10rpx;
+						// background-color: #888888;
+						border-radius: 50%;
+					}
+					.be-busy{
+						margin-left: 10rpx;
+						border-radius: 10rpx;
+						padding: 0 6rpx;
+						background-color: $uni-color-success;
+						color:$uni-bg-color;
+						font-size: $uni-font-size-sm12;
+					}
+				}
+				.right{
+					// width: 100rpx;
+					// height: 40rpx;
+					text-align: center;
+					line-height: 40rpx;
+					font-size: $uni-font-size-sm;
+					color:$uni-bg-color-theme;
+				}
+        .overall{
+          font-size: 14px;
+          .just{
+            color: red;
+            margin-right: 15rpx;
+          }
+        }
+			}
+
+			.key-box {
+				display: flex;
+				align-items: center;
+				margin-top: 20rpx;
+				font-size: $uni-font-size-base;
+				&.lr{
+					margin-left: 60rpx;
+				}
+				.handling-method{
+					border-radius: 10rpx;
+					padding: 0 6rpx;
+					background-color:$uni-color-warning;
+					color: $uni-bg-color;
+				}
+
+				.key {
+					min-width: 150rpx;
+					text-align-last: justify;
+					text-align: justify;
+					text-justify: distribute-all-lines;
+					
+				}
+				.t{
+					// color: #666666;
+				}
+				.fw{
+					align-self: flex-start;
+					min-width: 190rpx;
+				}
+			}
+
+			.time-box {
+				display: flex;
+				align-items: center;
+				justify-content: space-between;
+				margin: 20rpx 0 30rpx;
+
+				.time-image-box {
+					width: 1rpx;
+					height: 1rpx;
+				}
+
+				.send-orders {
+					background-color: $uni-color-primary;
+					color: #ffffff;
+				}
+
+			}
+		}
+		
+		.no-data{
+			display: block;
+			margin-top: 30rpx;
+		}
+		.driver-information{
+			display: block;
+			margin: 30rpx 0;
+			font-weight: bold;
+			font-size: $uni-font-size-lg;
+		}
+		.screen-box{
+			position: relative;
+			display: flex;
+			align-items: center;
+			justify-content: space-between;
+			z-index: 2;
+			.select-box{
+				
+				.top{
+					display: flex;
+					align-items: center;
+				
+					.select{
+						font-size: $uni-font-size-base;
+					}
+					.sj-bottom{
+						display: block;
+						margin-left: 20rpx;
+						width: 20rpx;
+						height: 20rpx;
+					}
+				}
+			}
+			.options-list{
+				position: absolute;
+				top: 50rpx;
+				background-color: $uni-bg-color;
+				.options{
+					color: #888888;
+					display: block;
+					font-size:$uni-font-size-base;
+					padding: 20rpx 50rpx;
+					border-bottom: 1rpx solid $uni-bg-color-hover;
+					&:last-child{
+						border-bottom: none;
+					}
+				}
+			}
+			.search{
+				display: block;
+				width: 40rpx;
+				height: 40rpx;
+			}
+		}
+		.distribute {
+			position: fixed;
+			left: 0;
+			bottom: 0;
+			right: 0;	
+			background-color: $uni-bg-color;
+			padding-bottom: env(safe-area-inset-bottom);
+			padding: 30rpx 30rpx;
+			/deep/ button {
+				width: 690rpx;
+				background-color:$uni-color-primary;
+			}
+		}
+	}

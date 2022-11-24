@@ -1,0 +1,247 @@
+{
+
+  "pages": [ //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/login/index",
+      "style": {
+        "navigationStyle": "custom",
+        "app-plus": {
+          "titleNView": false,
+          "scrollIndicator": "none",
+          "statusbar": {
+            "immersed": false,
+            "background": "#f6f6f6"
+          },
+          "bounce": "none",
+          "animationType": "slide-in-bottom",
+          "animationDuration": 300
+        }
+      }
+    },
+    {
+      "path": "pages/index/index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/my/index",
+      "style": {
+        "navigationBarTitleText": "个人中心",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/my/my-order",
+      "style": {
+        "navigationBarTitleText": "全部订单",
+        "enablePullDownRefresh": true
+      }
+    }, {
+      "path": "pages/record-management/components/order-item-detailsInfo",
+      "style": {
+        "navigationBarTitleText": "订单详情",
+        "enablePullDownRefresh": true
+
+      }
+    },
+    {
+      // 录单管理
+      "path": "pages/record-management/record-management",
+      "style": {
+        "navigationBarTitleText": "录单管理",
+        "enablePullDownRefresh": true
+      }
+    }, {
+      // 录单详情
+      "path": "pages/record-management/detailsInfo",
+      "style": {
+        "navigationBarTitleText": "新增客户信息",
+        "enablePullDownRefresh": false
+
+      }
+
+    }, {
+      "path": "pages/dispatch-management/dispatch-management",
+      "style": {
+        "navigationBarTitleText": "派单管理",
+        "enablePullDownRefresh": true
+
+      }
+    }, {
+      "path": "pages/dispatch-management/send-orders-detailsInfo",
+      "style": {
+        "navigationBarTitleText": "派单详情",
+        "enablePullDownRefresh": false
+
+      }
+    }, {
+      "path": "pages/dispatch-management/send-orders-detailsInfo2",
+      "style": {
+        "navigationBarTitleText": "派单详情",
+        "enablePullDownRefresh": false
+
+      }
+    }, {
+      "path": "pages/my/seats/index",
+      "style": {
+        "navigationBarTitleText": "录单人员",
+        "enablePullDownRefresh": true
+      }
+
+    },
+
+    {
+      "path": "pages/my/seats/my-order",
+      "style": {
+        "navigationBarTitleText": "订单内容",
+        "enablePullDownRefresh": true
+      }
+
+    },
+    {
+      "path": "pages/my/seats/order-item-detailsInfo",
+      "style": {
+        "navigationBarTitleText": "订单详情",
+        "enablePullDownRefresh": true
+      }
+
+    },
+    {
+      "path": "pages/serachCar/serachCar",
+      "style": {
+        "navigationBarTitleText": "车牌",
+        "enablePullDownRefresh": true
+      }
+
+    }
+
+
+    // ,{
+    //     "path" : "pages/orders/orders",
+    //     "style" :                                                                                    
+    //     {
+    //         "navigationBarTitleText": "",
+    //         "enablePullDownRefresh": false
+    //     }
+    // }
+  ],
+  "subPackages": [{
+      "root": "subPages",
+      "pages": [{
+        "path": "entering/index",
+        "style": {
+          "navigationBarTitleText": "合伙人管理",
+          "enablePullDownRefresh": true
+        }
+
+      }, {
+        "path": "entering/my-order",
+        "style": {
+          "navigationBarTitleText": "订单内容",
+          "enablePullDownRefresh": true
+        }
+
+      }, {
+        "path": "entering/order-item-detailsInfo",
+        "style": {
+          "navigationBarTitleText": "订单详情",
+          "enablePullDownRefresh": true
+        }
+
+      }, {
+        "path": "prevent/index",
+        "style": {
+          "navigationBarTitleText": "警保柜员人员",
+          "enablePullDownRefresh": true
+        }
+
+      }]
+
+    },
+    {
+      "root": "navPages",
+      "pages": [{
+          "path": "management",
+          "style": {
+            "navigationBarTitleText": "分级管理制度"
+          }
+
+        },
+        {
+          "path": "abnormal",
+          "style": {
+            "navigationBarTitleText": "异常场景QA"
+          }
+        }
+      ]
+    },
+    {
+      "root": "queryPages",
+      "pages": [{
+          "path": "detection-station-settle/index",
+          "style": {
+            "navigationBarTitleText": "检测站入驻",
+            "enablePullDownRefresh": true
+          }
+
+        },
+        {
+          "path": "detection-station-settle/PdfText",
+          "style": {
+            "navigationBarTitleText": "隐私保护",
+            "enablePullDownRefresh": false
+          }
+
+        }
+      ]
+    }
+  ],
+  "preloadRule": {
+    "pages/my/index": {
+      "network": "all",
+      "packages": ["subPages"]
+    },
+    "pages/index/index": {
+      "network": "all",
+      "packages": ["navPages"]
+    },
+    "pages/login/index": {
+      "network": "all",
+      "packages": ["queryPages"]
+    }
+  },
+  "globalStyle": {
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "uni-app",
+    "navigationBarBackgroundColor": "#F8F8F8",
+    "backgroundColor": "#F8F8F8"
+  },
+  "tabBar": {
+    "color": "#7A7E83",
+    "selectedColor": "#327DFD",
+    "borderStyle": "white",
+    "backgroundColor": "#ffffff",
+    "list": [{
+        "pagePath": "pages/index/index",
+        "iconPath": "static/images/tabbar/home-line.png",
+        "selectedIconPath": "static/images/tabbar/home-fill.png",
+        "text": "首页"
+      }, {
+        "pagePath": "pages/my/index",
+        "iconPath": "static/images/tabbar/user-line.png",
+        "selectedIconPath": "static/images/tabbar/user-fill.png",
+        "text": "我的"
+      }
+      // ,
+      // {
+      // 	"pagePath": "pages/orders/orders",
+      // 	"iconPath": "static/images/tabbar/alarm-line.png",
+      // 	 "selectedIconPath": "static/images/tabbar/alarm-fill.png",
+      // 	"text": "订单处理"
+      // }
+    ]
+  }
+
+}

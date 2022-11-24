@@ -1,0 +1,21 @@
+{
+    "id": "piaoyi-cityPicker",
+    "name": "省市区地址选择器",
+    "version": "1.0.1",
+    "description": "常用省市区选择器，可反选",
+    "keywords": [
+        "省市区",
+        "动画",
+        "选择器",
+        "可反选"
+    ],
+    "dcloudext": {
+        "category": [
+            "前端组件",
+            "通用组件"
+        ]
+    },
+    "dependencies": {
+        "@qiun/ucharts": "^2.4.3-20220505"
+    }
+}
